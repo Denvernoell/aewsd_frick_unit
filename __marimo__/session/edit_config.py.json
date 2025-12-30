@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.4"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "6e3b707b61ed98a6836c2e9420d9b7b9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Hbol-0' random-id='34edc646-523c-0c66-1992-1a94e8099324'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;id&#92;&quot;:1,&#92;&quot;Name&#92;&quot;:&#92;&quot;Proposed Pipeline&#92;&quot;,&#92;&quot;shape_type&#92;&quot;:&#92;&quot;line&#92;&quot;,&#92;&quot;color&#92;&quot;:&#92;&quot;orange&#92;&quot;,&#92;&quot;custom_icon&#92;&quot;:null,&#92;&quot;size&#92;&quot;:4.0,&#92;&quot;alpha&#92;&quot;:1.0,&#92;&quot;label&#92;&quot;:&#92;&quot;label&#92;&quot;,&#92;&quot;file_path&#92;&quot;:&#92;&quot;G:&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121523003-Frick Unit Pipeline&#92;&#92;&#92;&#92;400 GIS&#92;&#92;&#92;&#92;Scripts&#92;&#92;&#92;&#92;aewsd_frick_unit&#92;&#92;&#92;&#92;data&#92;&#92;&#92;&#92;pipes.parquet&#92;&quot;,&#92;&quot;file_type&#92;&quot;:&#92;&quot;gdf&#92;&quot;,&#92;&quot;shp&#92;&quot;:null,&#92;&quot;gdb&#92;&quot;:null,&#92;&quot;parquet&#92;&quot;:null,&#92;&quot;layer&#92;&quot;:null,&#92;&quot;clip_to_frick_x&#92;&quot;:null,&#92;&quot;full&#92;&quot;:true,&#92;&quot;simple&#92;&quot;:null},{&#92;&quot;id&#92;&quot;:2,&#92;&quot;Name&#92;&quot;:&#92;&quot;APNs&#92;&quot;,&#92;&quot;shape_type&#92;&quot;:&#92;&quot;filled_polygon&#92;&quot;,&#92;&quot;color&#92;&quot;:&#92;&quot;white&#92;&quot;,&#92;&quot;custom_icon&#92;&quot;:null,&#92;&quot;size&#92;&quot;:0.2,&#92;&quot;alpha&#92;&quot;:0.05,&#92;&quot;label&#92;&quot;:&#92;&quot;label&#92;&quot;,&#92;&quot;file_path&#92;&quot;:&#92;&quot;G:&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121523003-Frick Unit Pipeline&#92;&#92;&#92;&#92;400 GIS&#92;&#92;&#92;&#92;Scripts&#92;&#92;&#92;&#92;aewsd_frick_unit&#92;&#92;&#92;&#92;data&#92;&#92;&#92;&#92;apn_gdf_sa.parquet&#92;&quot;,&#92;&quot;file_type&#92;&quot;:&#92;&quot;gdf&#92;&quot;,&#92;&quot;shp&#92;&quot;:null,&#92;&quot;gdb&#92;&quot;:null,&#92;&quot;parquet&#92;&quot;:null,&#92;&quot;layer&#92;&quot;:null,&#92;&quot;clip_to_frick_x&#92;&quot;:null,&#92;&quot;full&#92;&quot;:true,&#92;&quot;simple&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:3,&#92;&quot;Name&#92;&quot;:&#92;&quot;District Boundary&#92;&quot;,&#92;&quot;shape_type&#92;&quot;:&#92;&quot;hollow_polygon&#92;&quot;,&#92;&quot;color&#92;&quot;:&#92;&quot;black&#92;&quot;,&#92;&quot;custom_icon&#92;&quot;:null,&#92;&quot;size&#92;&quot;:15.0,&#92;&quot;alpha&#92;&quot;:1.0,&#92;&quot;label&#92;&quot;:&#92;&quot;WDNAME&#92;&quot;,&#92;&quot;file_path&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;AEWSD_New_boundary.shp&#92;&quot;,&#92;&quot;file_type&#92;&quot;:&#92;&quot;shp&#92;&quot;,&#92;&quot;shp&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;AEWSD_New_boundary.shp&#92;&quot;,&#92;&quot;gdb&#92;&quot;:null,&#92;&quot;parquet&#92;&quot;:null,&#92;&quot;layer&#92;&quot;:null,&#92;&quot;clip_to_frick_x&#92;&quot;:null,&#92;&quot;full&#92;&quot;:true,&#92;&quot;simple&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:4,&#92;&quot;Name&#92;&quot;:&#92;&quot;AEWSD North Canal&#92;&quot;,&#92;&quot;shape_type&#92;&quot;:&#92;&quot;line&#92;&quot;,&#92;&quot;color&#92;&quot;:&#92;&quot;blue&#92;&quot;,&#92;&quot;custom_icon&#92;&quot;:null,&#92;&quot;size&#92;&quot;:4.0,&#92;&quot;alpha&#92;&quot;:1.0,&#92;&quot;label&#92;&quot;:&#92;&quot;CANAL&#92;&quot;,&#92;&quot;file_path&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;District_canal.shp&#92;&quot;,&#92;&quot;file_type&#92;&quot;:&#92;&quot;shp&#92;&quot;,&#92;&quot;shp&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;District_canal.shp&#92;&quot;,&#92;&quot;gdb&#92;&quot;:null,&#92;&quot;parquet&#92;&quot;:null,&#92;&quot;layer&#92;&quot;:null,&#92;&quot;clip_to_frick_x&#92;&quot;:null,&#92;&quot;full&#92;&quot;:true,&#92;&quot;simple&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:5,&#92;&quot;Name&#92;&quot;:&#92;&quot;FFPPP Discharge Pipeline&#92;&quot;,&#92;&quot;shape_type&#92;&quot;:&#92;&quot;line&#92;&quot;,&#92;&quot;color&#92;&quot;:&#92;&quot;#A2678A&#92;&quot;,&#92;&quot;custom_icon&#92;&quot;:null,&#92;&quot;size&#92;&quot;:4.0,&#92;&quot;alpha&#92;&quot;:1.0,&#92;&quot;label&#92;&quot;:&#92;&quot;CANAL&#92;&quot;,&#92;&quot;file_path&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;FFPP_discharge_pipeline.shp&#92;&quot;,&#92;&quot;file_type&#92;&quot;:&#92;&quot;shp&#92;&quot;,&#92;&quot;shp&#92;&quot;:&#92;&quot;&#92;&#92;&#92;&#92;&#92;&#92;&#92;&#92;ppeng.com&#92;&#92;&#92;&#92;pzdata&#92;&#92;&#92;&#92;clients&#92;&#92;&#92;&#92;Arvin-Edison WSD-1215&#92;&#92;&#92;&#92;121519004-FFP Frick Unit&#92;&#92;&#92;&#92;GIS&#92;&#92;&#92;&#92;Feature&#92;&#92;&#92;&#92;From_AE&#92;&#92;&#92;&#92;FFPP_discharge_pipeline.shp&#92;&quot;,&#92;&quot;gdb&#92;&quot;:null,&#92;&quot;parquet&#92;&quot;:null,&#92;&quot;layer&#92;&quot;:null,&#92;&quot;clip_to_frick_x&#92;&quot;:null,&#92;&quot;full&#92;&quot;:true,&#92;&quot;simple&#92;&quot;:true}]&quot;' data-total-rows='35' data-total-columns='17' data-max-columns='60' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='5' data-field-types='[[&quot;id&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;Name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;shape_type&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;color&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;custom_icon&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;size&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;alpha&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;label&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;file_path&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;file_type&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;shp&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;gdb&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;parquet&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;layer&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;clip_to_frick_x&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;full&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;simple&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Could not determine dtype for column 12, falling back to string\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "RjGU",
+      "code_hash": "17945d85f88e88535c40237a6f92e4cb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='RjGU-0' random-id='b46418f6-af55-c4b9-2a0d-a62fdb4ec7c0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;id&#92;&quot;:29,&#92;&quot;Name&#92;&quot;:&#92;&quot;turnouts&#92;&quot;,&#92;&quot;clip_to_district&#92;&quot;:null,&#92;&quot;clip_to_unit&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:30,&#92;&quot;Name&#92;&quot;:&#92;&quot;Sunset Spreading Works&#92;&quot;,&#92;&quot;clip_to_district&#92;&quot;:null,&#92;&quot;clip_to_unit&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:31,&#92;&quot;Name&#92;&quot;:&#92;&quot;Proposed Pipeline&#92;&quot;,&#92;&quot;clip_to_district&#92;&quot;:null,&#92;&quot;clip_to_unit&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:32,&#92;&quot;Name&#92;&quot;:&#92;&quot;USGS 10ft Ground Elevation&#92;&quot;,&#92;&quot;clip_to_district&#92;&quot;:null,&#92;&quot;clip_to_unit&#92;&quot;:true},{&#92;&quot;id&#92;&quot;:33,&#92;&quot;Name&#92;&quot;:&#92;&quot;Service Area&#92;&quot;,&#92;&quot;clip_to_district&#92;&quot;:null,&#92;&quot;clip_to_unit&#92;&quot;:true}]&quot;' data-total-rows='8' data-total-columns='4' data-max-columns='60' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='5' data-field-types='[[&quot;id&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;Name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;clip_to_district&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;clip_to_unit&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Could not determine dtype for column 2, falling back to string\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bZOI",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
