@@ -6,23 +6,16 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "97d4e5a748a224fd7d60f41b752596f6",
+      "code_hash": "01a9376b25f812339116ae1037074dc9",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<iframe src='./@file/271713-32400-xWqphout.html' width='100%' style='min-height: 540px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
+            "text/html": "<iframe src='./@file/313731-32400-W40yw9JR.html' width='100%' style='min-height: 540px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
           }
         }
       ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "{'record': {'elapsed': 'PT5.977867S', 'exception': None, 'extra': {}, 'file': {'name': '__init__.py', 'path': 'C:\\\\1-Projects\\\\aewsd_frick_unit\\\\data\\\\__init__.py'}, 'function': '<module>', 'level': {'icon': '\u2139\ufe0f', 'name': 'INFO', 'no': 20}, 'line': 15, 'message': 'data_path: C:\\\\1-Projects\\\\aewsd_frick_unit\\\\data', 'module': '__init__', 'name': 'data', 'process': {'id': 47292, 'name': 'Process-2'}, 'thread': {'id': 32400, 'name': 'MainThread'}, 'time': {}}}",
-          "mimetype": "text/plain"
-        }
-      ]
+      "console": []
     },
     {
       "id": "MJUe",

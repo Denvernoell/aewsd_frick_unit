@@ -1,4 +1,5 @@
 data/shps
+
 data/kml
 data/FrickUnit_Outreach
 data/TWSC_2023
@@ -11,3 +12,6 @@ node_modules/
 /playwright/.cache/
 
 .env
+data/usgs_contours.parquet
+
+.venv

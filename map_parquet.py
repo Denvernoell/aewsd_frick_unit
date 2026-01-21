@@ -171,7 +171,7 @@ def _():
             legend_dict=legend_dict,
             # position='bottomleft',
         )
-    
+
         # m.zoom_to_gdf(
         #     full_gdf[full_gdf["layer"] == "Proposed Pipeline"],
         # )
@@ -182,6 +182,9 @@ def _():
         )
         # m.zoom
         # f"{full_gdf.loc[full_gdf['layer']=='Proposed Pipeline'].total_bounds}"
+
+
+    
         return m
 
     from data import get_config, get_gdf
@@ -193,16 +196,10 @@ def _():
     # gdf
     # st.dataframe(apns.drop(columns=['geometry']))
     m = plot_map(gdf, config)
-    m
-    # full_gdf.total_bounds
-    # gdf.loc[gdf['layer']=='Proposed Pipeline'].total_bounds
-    # array([-118.89175177,   35.22704989, -118.84254324,   35.25253234])
-    # array([-119.04714684,   35.01604027, -118.73493338,   35.37675452])
 
-    # gdf.total_bounds
-    # gdf[
-    #     gdf['layer'] == 'DiGiorgio APNs'
-    # ]
+
+    m
+
     return
 
 

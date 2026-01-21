@@ -37,13 +37,43 @@ def _(get_config):
 
 
 @app.cell
+def _():
+    # usgs_contours = gpd.read_file(
+    #     r"Z:\GIS_Library\elevation\USGScontours\RegionalSouthValley\USGS_Elev_ft_NAVD88.shp",
+    # )
+    # usgs_contours.to_parquet("usgs_contours.parquet")
+    # usgs_contours = gpd.read_parquet("data/usgs_contours.parquet").to_crs(service_boundary.crs)
+    # clip(usgs_contours).to_parquet('data/clipped_usgs.parquet')
+    # _service_boundary = gpd.read_file(
+    #     layers.loc[layers["Name"] == "Existing Service Area"]["file_path"].iloc[0]
+    # )
+    # service_boundary.total_bounds
+    return
+
+
+@app.cell
+def _():
+
+    # service_boundary.crs
+    # usgs_contours
+    return
+
+
+@app.cell
+def _():
+    # service_boundary.plot()
+    return
+
+
+@app.cell
 def _(data_path, mo, pd):
     layers = pd.read_excel(
         data_path/"config.xlsx",
         sheet_name="Layers",
     )
     name = mo.ui.dropdown(
-        layers['Name'].unique()
+        layers['Name'].unique(),
+        value="Proposed Turnouts",
     )
     name
     return layers, name
@@ -77,19 +107,28 @@ def _(Path, gpd, layers, mo, name):
 
     # get_gdf(row)
     get_gdf(row)
-    return
+    return get_gdf, row
 
 
 @app.cell
-def _():
-    # get_gdf(row).plot(
-    #     column=row['label'],
-    #     legend=True,
-    #     # title=row['Name'],
-    #     legend_kwds={
-    #         "bbox_to_anchor":(1, 0.5)
-    #     }
-    # )
+def _(get_gdf, row, service_boundary):
+    import matplotlib.pyplot as plt
+    fig,ax = plt.subplots()
+
+
+    get_gdf(row).plot(
+        ax=ax,
+        # column=row['label'],
+        legend=True,
+        # title=row['Name'],
+        # legend_kwds={
+        #     "bbox_to_anchor":(1, 0.5)
+        # }
+    )
+    service_boundary.plot(ax=ax, facecolor="none", edgecolor="black")
+
+
+    fig
     return
 
 
@@ -172,7 +211,7 @@ def _(Path, gpd, layers, logger):
             logger.error(f"Layer {row['Name']} failed to load due to {e}")
             # logger.error(gdf.columns)
             return None
-    return (get_layer,)
+    return get_layer, service_boundary
 
 
 @app.cell
