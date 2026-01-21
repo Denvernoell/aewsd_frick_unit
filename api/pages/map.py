@@ -197,6 +197,13 @@ def map_page():
     m = plot_map(gdf, config)
     return (
         Title("AEWSD DiGiorgio Unit - Map"),
+        H2('Arvin-Edison Water Storage District'),
+        H3('DiGiorgio Unit Pipeline Project'),
         # H1("Preliminary", style="text-align:center"),
         NotStr(m.to_html()),
+        P("Notes"),
+        Ul(
+            Li("• The mainline alignment shall be selected to minimize construction constraints and overall project cost."),
+            Li("• Turnout locations and pipeline sizes are subject to change depending upon input received from landowners."),
+        ),
     )
