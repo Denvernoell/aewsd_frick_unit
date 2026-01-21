@@ -1,0 +1,40 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.19.2"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "6d17c421228b19722a09c41478a17914",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<iframe src='./@file/271115-49172-FpuD88iE.html' width='100%' style='min-height: 540px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "0959d79f3d42bde73ea0f219befa57fe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
