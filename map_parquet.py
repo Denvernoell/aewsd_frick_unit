@@ -14,6 +14,8 @@ def _():
     import sys
     import leafmap.foliumap as leafmap
     import folium
+
+
     # import leafmap.maplibregl as leafmap
 
 
@@ -21,41 +23,47 @@ def _():
     logger.add(sys.stderr, level="INFO")
 
 
+    return folium, leafmap, logger
 
-    def build_tooltip_html(row, layer_name):
-        """Build custom tooltip HTML from label_list"""
-        tooltip_parts = [f"<b>Layer:</b> {layer_name}"]
 
-        if 'label_list' in row.index and row['label_list'] is not None:
-            if isinstance(row['label_list'], str):
-                label_fields = [label.strip() for label in row['label_list'].split(',')]
+@app.function
+def build_tooltip_html(row, layer_name):
+    """Build custom tooltip HTML from label_list"""
+    tooltip_parts = [f"<b>Layer:</b> {layer_name}"]
 
-                # Check if we need to parse properties JSON
-                properties_dict = {}
-                if 'properties' in row.index and row['properties'] is not None:
-                    try:
-                        import json
-                        if isinstance(row['properties'], str):
-                            properties_dict = json.loads(row['properties'])
-                        elif isinstance(row['properties'], dict):
-                            properties_dict = row['properties']
-                    except:
-                        pass
+    if 'label_list' in row.index and row['label_list'] is not None:
+        if isinstance(row['label_list'], str):
+            label_fields = [label.strip() for label in row['label_list'].split(',')]
 
-                for field in label_fields:
-                    value = None
-                    # First check in direct row columns
-                    if field in row.index:
-                        value = row[field]
-                    # Then check in properties dict
-                    elif field in properties_dict:
-                        value = properties_dict[field]
+            # Check if we need to parse properties JSON
+            properties_dict = {}
+            if 'properties' in row.index and row['properties'] is not None:
+                try:
+                    import json
+                    if isinstance(row['properties'], str):
+                        properties_dict = json.loads(row['properties'])
+                    elif isinstance(row['properties'], dict):
+                        properties_dict = row['properties']
+                except:
+                    pass
 
-                    if value is not None and str(value).strip() != '' and str(value) != 'None':
-                        tooltip_parts.append(f"<b>{field}:</b> {value}")
+            for field in label_fields:
+                value = None
+                # First check in direct row columns
+                if field in row.index:
+                    value = row[field]
+                # Then check in properties dict
+                elif field in properties_dict:
+                    value = properties_dict[field]
 
-        return "<br>".join(tooltip_parts)
+                if value is not None and str(value).strip() != '' and str(value) != 'None':
+                    tooltip_parts.append(f"<b>{field}:</b> {value}")
 
+    return "<br>".join(tooltip_parts)
+
+
+@app.cell
+def _(folium, leafmap, logger):
     def plot_map(full_gdf, config):
         m = leafmap.Map(
             google_map="HYBRID",
@@ -65,15 +73,14 @@ def _():
             draw_control=False,
             search_control=False,
         )
-
         for i, y in config[:].iterrows():
             try:
                 gdf = full_gdf[full_gdf["layer"] == y["Name"]]
+                logger.info(y["Name"])
 
                 if y["shape_type"] == "hollow_polygon":
                     for idx, row in gdf.iterrows():
                         tooltip_html = build_tooltip_html(row, y["Name"])
-
                         folium.GeoJson(
                             row.geometry.__geo_interface__,
                             name=y["Name"],
@@ -81,6 +88,24 @@ def _():
                             style_function=lambda x, color=y["color"], size=y["size"]: {
                                 "color": color,
                                 "fillColor": "none",
+                                "weight": size,
+                            },
+                            highlight_function=lambda x: {
+                                "fillOpacity": 0.7,
+                                "weight": 6,
+                                "color": "lightgreen",
+                            },
+                            ).add_to(m)
+                if y["shape_type"] == "dashed_line":
+                    for idx, row in gdf.iterrows():
+                        tooltip_html = build_tooltip_html(row, y["Name"])
+                        folium.GeoJson(
+                            row.geometry.__geo_interface__,
+                            name=y["Name"],
+                            tooltip=folium.Tooltip(tooltip_html),
+                            dash_array="20",
+                            style_function=lambda x, color=y["color"], size=y["size"]: {
+                                "color": color,
                                 "weight": size,
                             },
                             highlight_function=lambda x: {
@@ -184,9 +209,13 @@ def _():
         # f"{full_gdf.loc[full_gdf['layer']=='Proposed Pipeline'].total_bounds}"
 
 
-    
-        return m
 
+        return m
+    return (plot_map,)
+
+
+@app.cell
+def _(plot_map):
     from data import get_config, get_gdf
     # from util.map_utils import plot_map
     # from data import get_config, get_gdf
@@ -196,10 +225,15 @@ def _():
     # gdf
     # st.dataframe(apns.drop(columns=['geometry']))
     m = plot_map(gdf, config)
-
-
     m
+    return
 
+
+@app.cell
+def _():
+    # gdf.loc[
+    #     gdf["layer"] == "Proposed Mainline Alternative"    
+    # ].iloc[0].geometry.coords[:]
     return
 
 

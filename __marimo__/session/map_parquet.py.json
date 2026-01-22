@@ -6,12 +6,71 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "01a9376b25f812339116ae1037074dc9",
+      "code_hash": "7af27f80f09f3146c7a60bff08260273",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<iframe src='./@file/313731-32400-W40yw9JR.html' width='100%' style='min-height: 540px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
+            "text/html": "<pre class='text-xs'>28</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LlCE",
+      "code_hash": "c10da79f782c9c86c696ffa9b26617f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ywhy",
+      "code_hash": "a45bdc4ca094c6fba03e22a4048a337e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HCWK",
+      "code_hash": "992c671e5e11ec8787408f7d665d8226",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<iframe src='./@file/331390-40424-JYYMYUon.html' width='100%' style='min-height: 540px' onload='__resizeIframe(this)' frameborder='0'></iframe>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "2026-01-22 09:34:46.909 | INFO     | __main__:plot_map:13 - District Boundary\n2026-01-22 09:34:46.911 | INFO     | __main__:plot_map:13 - DiGiorgio Unit\n2026-01-22 09:34:46.916 | INFO     | __main__:plot_map:13 - AEWSD Spreading Works\n2026-01-22 09:34:46.923 | INFO     | __main__:plot_map:13 - Proposed Service Area\n2026-01-22 09:34:46.926 | INFO     | __main__:plot_map:13 - Existing Service Area\n2026-01-22 09:34:46.927 | INFO     | __main__:plot_map:13 - DiGiorgio APNs\n2026-01-22 09:34:46.938 | INFO     | __main__:plot_map:13 - Proposed Mainline Alternative\n2026-01-22 09:34:46.940 | INFO     | __main__:plot_map:13 - USGS 10ft Ground Elevation\n2026-01-22 09:34:46.943 | INFO     | __main__:plot_map:13 - Phase 1 Pipeline\n2026-01-22 09:34:46.945 | INFO     | __main__:plot_map:13 - Proposed Pipeline\n2026-01-22 09:34:46.950 | INFO     | __main__:plot_map:13 - Existing Pipeline\n2026-01-22 09:34:46.952 | INFO     | __main__:plot_map:13 - Proposed Turnouts\n2026-01-22 09:34:46.958 | INFO     | __main__:plot_map:13 - Existing Turnouts\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "jJYA",
+      "code_hash": "dddaf2b4ac9838d2cb6ff3f9f742ba0e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
           }
         }
       ],
@@ -20,6 +79,12 @@
     {
       "id": "MJUe",
       "code_hash": "0959d79f3d42bde73ea0f219befa57fe",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": null,
       "outputs": [],
       "console": []
     }
